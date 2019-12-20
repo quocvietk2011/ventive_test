@@ -23,9 +23,8 @@ export function loadFiles(files) {
 
 export function uploadFile(formData) {
 	return function (dispatch) {
-		return API.uploadFile(formData).then(file => {
-			console.log('afterupload', file)
-			dispatch(addFile(file));
+		return API.uploadFile(formData).then(data => {
+			dispatch(addFile(data.file));
 		}).catch(error => {
 			throw (error);
 		});

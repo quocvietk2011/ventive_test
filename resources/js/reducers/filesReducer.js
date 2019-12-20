@@ -9,7 +9,7 @@ export default function filesReducer(state = initialState, action) {
 		case ADD_FILE:
 			return {
 				...state,
-				files: [...state.files, action.file],
+				files: [action.file, ...state.files],
 				currentFile: action.file
 			}
 		case VIEW_FILE:

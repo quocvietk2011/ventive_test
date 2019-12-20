@@ -43,29 +43,32 @@ class FileUploadController extends Controller
 
     public function upload(Request $request)
     {
-        $rs = [];
+        $rs = [
+            'success' => false,
+            'file' => [],
+        ];
         if ($request->hasFile('file')) {
-            if ($file = $request->file('file')) {
-                $orgName = $file->getClientOriginalName();
-                $filename = pathinfo($orgName, PATHINFO_FILENAME);
-                $extension = $file->getClientOriginalExtension();
-                $fileNameWithExt = $filename . '_' . time() . '.' . $extension;
-                Storage::disk('public')->put($fileNameWithExt, File::get($file));
-                $path = storage_path('public/uploads/' . $fileNameWithExt);
-                $upload = new FileUpload();
-                $upload->title = $filename;
-                $upload->author = "Viet Le";
-                $upload->filename = $fileNameWithExt;
-                $upload->extension = $extension;
-                $upload->save();
-                $upload->content = url('uploads', $upload->filename); // get_file_info($upload);
+            $file = $request->file('file');
+            $orgName = $file->getClientOriginalName();
+            $filename = pathinfo($orgName, PATHINFO_FILENAME);
+            $extension = $file->getClientOriginalExtension();
+            $fileNameWithExt = $filename . '_' . time() . '.' . $extension;
+            Storage::disk('public')->put($fileNameWithExt, File::get($file));
+            $path = storage_path('public/uploads/' . $fileNameWithExt);
+            $upload = new FileUpload();
+            $upload->title = $filename;
+            $upload->author = "Viet Le";
+            $upload->filename = $fileNameWithExt;
+            $upload->extension = $extension;
+            if ($upload->save()) {
+                $upload->content = get_file_info($upload);
+                $rs = [
+                    'success' => false,
+                    'file' => $upload,
+                ];
             }
         }
-        $rs = [
-            'status' => 1,
-            'path' => $path,
-        ];
-        return response()->json($upload);
+        return response()->json($rs);
     }
 
 }
