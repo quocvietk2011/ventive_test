@@ -1,5 +1,6 @@
 import * as types from '../constants/ActionTypes';
 import API from '../constants/API';
+
 export function addFile(file) {
 	return {
 		type: types.ADD_FILE,
@@ -24,7 +25,11 @@ export function loadFiles(files) {
 export function uploadFile(formData) {
 	return function (dispatch) {
 		return API.uploadFile(formData).then(data => {
-			dispatch(addFile(data.file));
+			if (data.error == 0) {
+				dispatch(addFile(data.file));
+			} else {
+				alert('Error posting data')
+			}
 		}).catch(error => {
 			throw (error);
 		});
@@ -33,8 +38,12 @@ export function uploadFile(formData) {
 
 export function fetchAllFiles() {
 	return function (dispatch) {
-		return API.getListFiles().then(files => {
-			dispatch(loadFiles(files));
+		return API.getListFiles().then(data => {
+			if (data.error == 0) {
+				dispatch(loadFiles(data.files));
+			} else {
+				alert('Error loading data')
+			}
 		}).catch(error => {
 			throw (error);
 		});
@@ -43,8 +52,12 @@ export function fetchAllFiles() {
 
 export function viewFile(id) {
 	return function (dispatch) {
-		return API.getFile(id).then(file => {
-			dispatch(loadFileDetail(file));
+		return API.getFile(id).then(data => {
+			if (data.error == 0) {
+				dispatch(loadFileDetail(data.file));
+			} else {
+				alert('Error loading data')
+			}
 		}).catch(error => {
 			throw (error);
 		});

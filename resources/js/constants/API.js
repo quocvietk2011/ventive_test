@@ -1,14 +1,21 @@
 import axios from 'axios'
 const API_URL = ' http://localhost:8000/api/'
-
+import initialState from '../reducers/initialState';
+const error = 0;
 class API {
 	static getListFiles() {
 		return axios.get(
 			API_URL + 'files'
 		).then(response => {
-			return response.data;
+			return {
+				files: response.data,
+				error: error
+			};
 		}).catch(error => {
-			console.log(error);
+			return {
+				files: initialState.files,
+				error: error
+			}
 		}).finally(() => {
 		});
 	}
@@ -19,9 +26,22 @@ class API {
 			url: API_URL + 'upload',
 			data: formData
 		}).then(function (response) {
-			return response.data
+			if (response.data.error == false) {
+				return {
+					file: response.data.file,
+					error: error
+				};
+			} else {
+				return {
+					file: initialState.currentFile,
+					error: error
+				}
+			}
 		}).catch(function (error) {
-			console.log(error);
+			return {
+				file: initialState.currentFile,
+				error: error
+			}
 		});
 	}
 
@@ -29,9 +49,15 @@ class API {
 		return axios.get(
 			API_URL + 'files/' + id,
 		).then(response => {
-			return response.data;
+			return {
+				file: response.data,
+				error: error
+			};
 		}).catch(error => {
-			console.log(error);
+			return {
+				file: initialState.currentFile,
+				error: error
+			}
 		}).finally(() => {
 		});
 	}

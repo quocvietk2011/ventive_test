@@ -41,7 +41,7 @@ class FileDetail extends Component {
 				</div>
 			)
 		} else {
-			return (<div>sss</div>)
+			return (<div>Error loading file</div>)
 		}
 	}
 }

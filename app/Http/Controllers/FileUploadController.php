@@ -44,7 +44,7 @@ class FileUploadController extends Controller
     public function upload(Request $request)
     {
         $rs = [
-            'success' => false,
+            'error' => true,
             'file' => [],
         ];
         if ($request->hasFile('file')) {
@@ -63,7 +63,7 @@ class FileUploadController extends Controller
             if ($upload->save()) {
                 $upload->content = get_file_info($upload);
                 $rs = [
-                    'success' => false,
+                    'error' => false,
                     'file' => $upload,
                 ];
             }

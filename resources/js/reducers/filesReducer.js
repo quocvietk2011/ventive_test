@@ -1,9 +1,6 @@
 import { GET_LIST_FILE, ADD_FILE, VIEW_FILE } from '../constants/ActionTypes';
+import initialState from './initialState';
 
-const initialState = {
-	files: [],
-	currentFile: {}
-}
 export default function filesReducer(state = initialState, action) {
 	switch (action.type) {
 		case ADD_FILE:
