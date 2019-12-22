@@ -6,9 +6,6 @@ import * as FileActions from '../actions/FileActions';
 class FileUpload extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			file: null
-		}
 		this.onChange = this.onChange.bind(this)
 	}
 
@@ -27,16 +24,11 @@ class FileUpload extends Component {
 		)
 	}
 }
-function mapStateToProps(state) {
-	return {
-		files: state.filesReducer.files,
-		currentFile: state.filesReducer.currentFile
-	};
-}
+
 function mapDispatchToProps(dispatch) {
 	return {
 		actions: bindActionCreators(FileActions, dispatch)
 	};
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(FileUpload);
+export default connect(null, mapDispatchToProps)(FileUpload);

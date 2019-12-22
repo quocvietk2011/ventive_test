@@ -10,7 +10,7 @@ class SideBar extends Component {
 	constructor(props) {
 		super(props);
 	}
-	componentDidUpdate(prevProps, prevState) {
+	componentDidUpdate(prevProps) {
 		if (prevProps.files.length !== this.props.files.length) {
 			let file = this.props.files[0]
 			this.props.actions.viewFile(file.id)
@@ -48,6 +48,7 @@ class SideBar extends Component {
 SideBar.propTypes = {
 	files: PropTypes.array.isRequired
 };
+
 function mapStateToProps(state) {
 	return {
 		files: state.filesReducer.files,

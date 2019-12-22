@@ -26,23 +26,18 @@ class FileDetail extends Component {
 	}
 	render() {
 		const { currentFile } = this.props.currentFile
-		if (currentFile != undefined) {
-
-			return (
-				<div id="content">
-					<nav className="navbar navbar-expand-lg navbar-light bg-light">
-						<div className="container-fluid title-page">
-							<span>{currentFile.title}</span>
-						</div>
-					</nav>
-					<div className="container content-page">
-						<DisplayContent file={currentFile} />
+		return (
+			<div id="content">
+				<nav className="navbar navbar-expand-lg navbar-light bg-light">
+					<div className="container-fluid title-page">
+						<span>{currentFile.title}</span>
 					</div>
+				</nav>
+				<div className="container content-page">
+					<DisplayContent file={currentFile} />
 				</div>
-			)
-		} else {
-			return (<div>Error loading file</div>)
-		}
+			</div>
+		)
 	}
 }
 
