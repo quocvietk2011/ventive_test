@@ -21,7 +21,7 @@ class FileUpload extends Component {
 	render() {
 		return (
 			<span className="upload">
-				<i className="fa fa-upload"></i>
+				<span>Upload</span><i className="fa fa-upload"></i>
 				<input type="file" name="file" id="file" onChange={this.onChange} />
 			</span>
 		)

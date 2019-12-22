@@ -8,12 +8,9 @@ import './style.css';
 
 const store = configureStore();
 store.dispatch(fetchAllFiles());
-
 const appRoot = (
 	<Provider store={store}>
-		<div>
-			<TodoApp />
-		</div>
+		<TodoApp />
 	</Provider>
 )
 

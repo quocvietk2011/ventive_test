@@ -4,10 +4,11 @@ import { bindActionCreators } from 'redux';
 import SideBar from '../components/SideBar';
 import FileDetail from '../components/FileDetail';
 import * as FileActions from '../actions/FileActions';
-
+import { fetchAllFiles } from '../actions/FileActions';
 class UploadApp extends Component {
+
 	render() {
-		//const { files, currentFile } = this.props;
+		const { files, currentFile } = this.props;
 		return (
 			<div className="wrapper">
 				<SideBar />
@@ -29,5 +30,4 @@ function mapDispatchToProps(dispatch) {
 		actions: bindActionCreators(FileActions, dispatch)
 	};
 }
-
 export default connect(mapStateToProps, mapDispatchToProps)(UploadApp);
