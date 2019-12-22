@@ -6429,7 +6429,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);", ""]);
 
 // module
-exports.push([module.i, "/*\n    DEMO STYLE\n*/\n\nbody {\n    font-family: 'Poppins', sans-serif;\n    background: #fafafa;\n}\n\np {\n    font-family: 'Poppins', sans-serif;\n    font-size: 1.1em;\n    font-weight: 300;\n    line-height: 1.7em;\n    color: #999;\n}\n\na,\na:hover,\na:focus {\n    color: inherit;\n    text-decoration: none;\n    -webkit-transition: all 0.3s;\n    transition: all 0.3s;\n}\n\n.navbar {\n    padding: 0px;\n    background: #fff;\n    border: none;\n    border-radius: 0;\n    margin-bottom: 40px;\n    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);\n}\n\n.navbar-btn {\n    box-shadow: none;\n    outline: none !important;\n    border: none;\n}\n\n.line {\n    width: 100%;\n    height: 1px;\n    border-bottom: 1px dashed #ddd;\n    margin: 40px 0;\n}\n\n/* ---------------------------------------------------\n    SIDEBAR STYLE\n----------------------------------------------------- */\n\n.wrapper {\n    display: -webkit-box;\n    display: flex;\n    width: 100%;\n}\n\n#sidebar {\n    width: 250px;\n    position: fixed;\n    top: 0;\n    left: 0;\n    height: 100vh;\n    z-index: 999;\n    background: #f3f3f3;\n    color: #394166;\n    -webkit-transition: all 0.3s;\n    transition: all 0.3s;\n}\n\n#sidebar.active {\n    margin-left: -250px;\n}\n\n#sidebar .sidebar-header {\n    padding: 10px;\n    background: #f3f3f3;\n    border-bottom: 2px solid #d7d9e0;\n}\n\niframe {\n    width: 100%;\n    height: 100%;\n    border: 0\n}\n\n#sidebar .sidebar-header input[type=file] {\n    position: absolute;\n    top: 10px;\n    right: 0;\n    max-width: 40px;\n    max-height: 40px;\n    font-size: 100px;\n    text-align: right;\n    filter: alpha(opacity=0);\n    opacity: 0;\n    outline: none;\n    background: white;\n    cursor: pointer;\n    display: block;\n}\n\n#sidebar .sidebar-header .upload {\n    display: -webkit-inline-box;\n    display: inline-flex;\n    float: right;\n    -webkit-box-align: center;\n            align-items: center;\n    color: #575960;\n}\n\n#sidebar .sidebar-header i.fa-upload {\n    margin: 10px;\n    cursor: pointer;\n    font-size: 30px;\n}\n\n#sidebar .sidebar-header i:hover {\n    opacity: 0.6;\n}\n\n#sidebar ul.components {\n    padding: 20px 0;\n}\n\n#sidebar ul p {\n    color: #fff;\n    padding: 10px;\n}\n\n#sidebar ul li {\n    cursor: pointer\n}\n\n#sidebar ul li a {\n    padding: 10px;\n    font-size: 1.1em;\n    display: block;\n}\n\n#sidebar ul li a span {\n    float: left;\n    width: 100%;\n\n}\n\n#sidebar ul li a:hover {\n    color: #7386D5;\n    background: #fff;\n}\n\n#sidebar ul li.active>a,\na[aria-expanded=\"true\"] {\n    color: #394166;\n    background: #fff;\n    border-left: 4px solid #4077e4;\n}\n\na[data-toggle=\"collapse\"] {\n    position: relative;\n}\n\n.dropdown-toggle::after {\n    display: block;\n    position: absolute;\n    top: 50%;\n    right: 20px;\n    -webkit-transform: translateY(-50%);\n            transform: translateY(-50%);\n}\n\nul ul a {\n    font-size: 0.9em !important;\n    padding-left: 30px !important;\n    background: #6d7fcc;\n}\n\nul.CTAs {\n    padding: 20px;\n}\n\nul.CTAs a {\n    text-align: center;\n    font-size: 0.9em !important;\n    display: block;\n    border-radius: 5px;\n    margin-bottom: 5px;\n}\n\na.download {\n    background: #fff;\n    color: #7386D5;\n}\n\na.article,\na.article:hover {\n    background: #6d7fcc !important;\n    color: #fff !important;\n}\n\n/* ---------------------------------------------------\n    CONTENT STYLE\n----------------------------------------------------- */\n\n#content {\n    width: calc(100% - 250px);\n    padding: 0px;\n    min-height: 100vh;\n    -webkit-transition: all 0.3s;\n    transition: all 0.3s;\n    position: absolute;\n    top: 0;\n    right: 0;\n}\n\n#content .title-page {\n    background: #4077e4;\n    height: 80px;\n    color: #fff;\n    font-size: 24px;\n}\n\n#content.active {\n    width: 100%;\n}\n\n#content .content-page {\n    width: 100%;\n    max-width: 100%;\n    text-align: center;\n}\n\n/* ---------------------------------------------------\n    MEDIAQUERIES\n----------------------------------------------------- */\n\n@media (max-width: 768px) {\n    #sidebar {\n        margin-left: -250px;\n    }\n\n    #sidebar.active {\n        margin-left: 0;\n    }\n\n    #content {\n        width: 100%;\n    }\n\n    #content.active {\n        width: calc(100% - 250px);\n    }\n\n    #sidebarCollapse span {\n        display: none;\n    }\n}\n", ""]);
+exports.push([module.i, "/*\n    DEMO STYLE\n*/\n\nbody {\n    font-family: 'Poppins', sans-serif;\n    background: #fafafa;\n}\n\np {\n    font-family: 'Poppins', sans-serif;\n    font-size: 1.1em;\n    font-weight: 300;\n    line-height: 1.7em;\n    color: #999;\n}\n\na,\na:hover,\na:focus {\n    color: inherit;\n    text-decoration: none;\n    -webkit-transition: all 0.3s;\n    transition: all 0.3s;\n}\n\n.navbar {\n    padding: 0px;\n    background: #fff;\n    border: none;\n    border-radius: 0;\n    margin-bottom: 40px;\n    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);\n}\n\n.navbar-btn {\n    box-shadow: none;\n    outline: none !important;\n    border: none;\n}\n\n.line {\n    width: 100%;\n    height: 1px;\n    border-bottom: 1px dashed #ddd;\n    margin: 40px 0;\n}\n\n/* ---------------------------------------------------\n    SIDEBAR STYLE\n----------------------------------------------------- */\n\n.wrapper {\n    display: -webkit-box;\n    display: flex;\n    width: 100%;\n}\n\n#sidebar {\n    width: 250px;\n    position: fixed;\n    top: 0;\n    left: 0;\n    height: 100vh;\n    z-index: 999;\n    background: #f3f3f3;\n    color: #394166;\n    -webkit-transition: all 0.3s;\n    transition: all 0.3s;\n}\n\n#sidebar.active {\n    margin-left: -250px;\n}\n\n#sidebar .sidebar-header {\n    padding: 15px 10px;\n    background: #f3f3f3;\n    border-bottom: 2px solid #d7d9e0;\n}\n\n#sidebar .sidebar-header h3 {\n    font-size: 14px;\n    font-weight: bold;\n}\n\niframe {\n    width: 100%;\n    height: 100%;\n    border: 0\n}\n\n#sidebar .sidebar-header input[type=file] {\n    position: absolute;\n    top: 10px;\n    right: 0;\n    max-width: 80px;\n    max-height: 40px;\n    font-size: 100px;\n    text-align: right;\n    filter: alpha(opacity=0);\n    opacity: 0;\n    outline: none;\n    background: white;\n    cursor: pointer;\n    display: block;\n    width: 80px\n}\n\n#sidebar .sidebar-header .upload {\n    float: right;\n    -webkit-box-align: center;\n            align-items: center;\n    color: #575960;\n    cursor: pointer;\n}\n\n#sidebar .sidebar-header .upload span {\n    font-size: 13px;\n    margin-right: 5px;\n    font-weight: normal;\n}\n\n#sidebar .sidebar-header i.fa-upload {\n    margin: 10px;\n    cursor: pointer;\n    font-size: 20px;\n}\n\n#sidebar .sidebar-header i:hover {\n    opacity: 0.6;\n}\n\n#sidebar ul.components {\n    padding: 20px 0;\n}\n\n#sidebar ul p {\n    color: #fff;\n    padding: 10px;\n}\n\n#sidebar ul li {\n    cursor: pointer\n}\n\n#sidebar ul li a {\n    padding: 10px;\n    font-size: 1.1em;\n    display: block;\n}\n\n#sidebar ul li a span {\n    float: left;\n    width: 100%;\n    font-size: 14px;\n    color: #394166;\n    font-weight: bold\n}\n\n#sidebar ul li a small {\n    font-size: 12px;\n    color: #394166;\n\n}\n\n#sidebar ul li a:hover {\n    color: #7386D5;\n    background: #fff;\n}\n\n#sidebar ul li.active>a,\na[aria-expanded=\"true\"] {\n    color: #394166;\n    background: #fff;\n    border-left: 4px solid #4077e4;\n}\n\na[data-toggle=\"collapse\"] {\n    position: relative;\n}\n\n.dropdown-toggle::after {\n    display: block;\n    position: absolute;\n    top: 50%;\n    right: 20px;\n    -webkit-transform: translateY(-50%);\n            transform: translateY(-50%);\n}\n\nul ul a {\n    font-size: 0.9em !important;\n    padding-left: 30px !important;\n    background: #6d7fcc;\n}\n\nul.CTAs {\n    padding: 20px;\n}\n\nul.CTAs a {\n    text-align: center;\n    font-size: 0.9em !important;\n    display: block;\n    border-radius: 5px;\n    margin-bottom: 5px;\n}\n\na.download {\n    background: #fff;\n    color: #7386D5;\n}\n\na.article,\na.article:hover {\n    background: #6d7fcc !important;\n    color: #fff !important;\n}\n\n/* ---------------------------------------------------\n    CONTENT STYLE\n----------------------------------------------------- */\n\n#content {\n    width: calc(100% - 250px);\n    padding: 0px;\n    min-height: 100vh;\n    -webkit-transition: all 0.3s;\n    transition: all 0.3s;\n    position: absolute;\n    top: 0;\n    right: 0;\n}\n\n#content .title-page {\n    background: #4077e4;\n    color: #fff;\n    font-size: 18px;\n    padding: 15px;\n    min-height: 55px\n}\n\n#content.active {\n    width: 100%;\n}\n\n#content .content-page {\n    width: 100%;\n    max-width: 100%;\n    text-align: left;\n}\n\n/* ---------------------------------------------------\n    MEDIAQUERIES\n----------------------------------------------------- */\n\n@media (max-width: 768px) {\n    #sidebar {\n        margin-left: -250px;\n    }\n\n    #sidebar.active {\n        margin-left: 0;\n    }\n\n    #content {\n        width: 100%;\n    }\n\n    #content.active {\n        width: calc(100% - 250px);\n    }\n\n    #sidebarCollapse span {\n        display: none;\n    }\n}\n", ""]);
 
 // exports
 
@@ -72992,7 +72992,7 @@ var store = Object(_store_configureStore__WEBPACK_IMPORTED_MODULE_2__["default"]
 store.dispatch(Object(_actions_FileActions__WEBPACK_IMPORTED_MODULE_5__["fetchAllFiles"])());
 var appRoot = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_3__["Provider"], {
   store: store
-}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_UploadApp__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
+}, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_UploadApp__WEBPACK_IMPORTED_MODULE_4__["default"], null));
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(appRoot, document.getElementById('app'));
 
 /***/ }),
@@ -73036,9 +73036,8 @@ function loadFiles(files) {
 }
 function uploadFile(formData) {
   return function (dispatch) {
-    return _constants_API__WEBPACK_IMPORTED_MODULE_1__["default"].uploadFile(formData).then(function (file) {
-      console.log('afterupload', file);
-      dispatch(addFile(file));
+    return _constants_API__WEBPACK_IMPORTED_MODULE_1__["default"].uploadFile(formData).then(function (data) {
+      dispatch(addFile(data.file));
     })["catch"](function (error) {
       throw error;
     });
@@ -73314,7 +73313,7 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "upload"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Upload"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-upload"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "file",
@@ -73393,16 +73392,9 @@ function (_Component) {
   _inherits(SideBar, _Component);
 
   function SideBar(props) {
-    var _this;
-
     _classCallCheck(this, SideBar);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(SideBar).call(this, props));
-    var _this$props = _this.props,
-        files = _this$props.files,
-        currentFile = _this$props.currentFile,
-        actions = _this$props.actions;
-    return _this;
+    return _possibleConstructorReturn(this, _getPrototypeOf(SideBar).call(this, props));
   }
 
   _createClass(SideBar, [{
@@ -73410,29 +73402,30 @@ function (_Component) {
     value: function componentDidMount() {
       if (this.props.files.length > 0) {
         var file = this.props.files[0];
-        actions.viewFile(file.id);
+        this.props.actions.viewFile(file.id);
       }
     }
   }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
+      var _this = this;
 
+      console.log('list files: ', this.props.files);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
         id: "sidebar"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "sidebar-header"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "FILES", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FileUpload__WEBPACK_IMPORTED_MODULE_4__["default"], null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "FILES"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FileUpload__WEBPACK_IMPORTED_MODULE_4__["default"], null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "list-unstyled components"
       }, this.props.files.map(function (file) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-          className: file.id == _this2.props.currentFile.id ? 'active' : '',
+          className: file.id == _this.props.currentFile.id ? 'active' : '',
           key: file.id
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
           onClick: function onClick() {
-            return _this2.props.actions.viewFile(file.id);
+            return _this.props.actions.viewFile(file.id);
           }
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, file.title + ' ' + file.filename, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " ", file.author)));
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, file.title, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, " ", file.author)));
       }))));
     }
   }]);
@@ -73587,6 +73580,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var UploadApp =
 /*#__PURE__*/
 function (_Component) {
@@ -73601,7 +73595,9 @@ function (_Component) {
   _createClass(UploadApp, [{
     key: "render",
     value: function render() {
-      //const { files, currentFile } = this.props;
+      var _this$props = this.props,
+          files = _this$props.files,
+          currentFile = _this$props.currentFile;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "wrapper"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SideBar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_FileDetail__WEBPACK_IMPORTED_MODULE_4__["default"], null));
@@ -73665,7 +73661,7 @@ function filesReducer() {
   switch (action.type) {
     case _constants_ActionTypes__WEBPACK_IMPORTED_MODULE_0__["ADD_FILE"]:
       return _objectSpread({}, state, {
-        files: [].concat(_toConsumableArray(state.files), [action.file]),
+        files: [action.file].concat(_toConsumableArray(state.files)),
         currentFile: action.file
       });
 
@@ -73724,8 +73720,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function configureStore(initialState) {
-  return Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_1__["default"], initialState, Object(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"])(redux_thunk__WEBPACK_IMPORTED_MODULE_2__["default"]));
+function configureStore() {
+  return Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_1__["default"], Object(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"])(redux_thunk__WEBPACK_IMPORTED_MODULE_2__["default"]));
 }
 
 /***/ }),
