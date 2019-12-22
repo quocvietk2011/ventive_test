@@ -8,7 +8,6 @@ import { fetchAllFiles } from '../actions/FileActions';
 class UploadApp extends Component {
 
 	render() {
-		const { files, currentFile } = this.props;
 		return (
 			<div className="wrapper">
 				<SideBar />

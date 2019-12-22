@@ -10,17 +10,14 @@ class SideBar extends Component {
 	constructor(props) {
 		super(props);
 	}
-
-	componentDidMount() {
-
-		if (this.props.files.length > 0) {
+	componentDidUpdate(prevProps, prevState) {
+		if (prevProps.files.length !== this.props.files.length) {
 			let file = this.props.files[0]
 			this.props.actions.viewFile(file.id)
 		}
 	}
 
 	render() {
-		console.log('list files: ', this.props.files)
 		return (
 			<div>
 				<nav id="sidebar">
